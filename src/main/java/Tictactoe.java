@@ -12,7 +12,7 @@ public class Tictactoe {
         return currentPlayer;
     }
 
-    public void playTurn(int row, int column) throws Exception{
+    public void playTurn(Row row, Column column) throws Exception{
         board.placeMarkOrThrow(currentPlayer,row,column);
         setWinnerIfWon(currentPlayer,row,column);
         currentPlayer = nextPlayer();
@@ -33,8 +33,8 @@ public class Tictactoe {
         return winner;
     }
 
-    private void setWinnerIfWon(Mark x, int row, int column) {
-        if(board.hasSameMarkInRow(x, row) || board.hasSameMarkInColumn(x, column))
+    private void setWinnerIfWon(Mark x, Row row, Column column) {
+        if(board.hasThreeInARow(x))
             winner = x;
         }
     }

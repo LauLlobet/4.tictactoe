@@ -32,11 +32,11 @@ If all nine squares are filled and neither player has three in a row, the game i
     public void alternate_players_after_each_turn() throws Exception {
         Tictactoe tictactoe = new Tictactoe(new Board());
 
-        tictactoe.playTurn(0, 0);
+        tictactoe.playTurn(Row.UP, Column.MIDDLE);
 
         assertEquals(tictactoe.currentPlayerMark(), Mark.O);
 
-        tictactoe.playTurn(1, 0);
+        tictactoe.playTurn(Row.UP, Column.LEFT);
 
         assertEquals(tictactoe.currentPlayerMark(), Mark.X);
     }

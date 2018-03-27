@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cef5a5dd-7957-4bde-bdef-070402bc4807" name="Default" comment="" />
+    <list default="true" id="cef5a5dd-7957-4bde-bdef-070402bc4807" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Column.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Row.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Board.java" afterPath="$PROJECT_DIR$/src/main/java/Board.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tictactoe.java" afterPath="$PROJECT_DIR$/src/main/java/Tictactoe.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BoardShould.java" afterPath="$PROJECT_DIR$/src/test/java/BoardShould.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TictactoeShould.java" afterPath="$PROJECT_DIR$/src/test/java/TictactoeShould.java" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Board.class" afterPath="$PROJECT_DIR$/target/classes/Board.class" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,9 +26,11 @@
       <file leaf-file-name="TictactoeShould.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/TictactoeShould.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="510">
+              <caret line="34" column="48" lean-forward="true" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -26,49 +38,84 @@
       <file leaf-file-name="Tictactoe.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Tictactoe.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="36" column="65" lean-forward="false" selection-start-line="36" selection-start-column="65" selection-end-line="36" selection-end-column="65" />
+            <state relative-caret-position="342">
+              <caret line="36" column="35" lean-forward="false" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
               <folding>
                 <element signature="e#157#158#0" expanded="true" />
                 <element signature="e#191#192#0" expanded="true" />
                 <element signature="e#230#231#0" expanded="true" />
                 <element signature="e#266#267#0" expanded="true" />
-                <element signature="e#651#652#0" expanded="true" />
-                <element signature="e#712#713#0" expanded="true" />
-                <element signature="e#743#744#0" expanded="true" />
-                <element signature="e#772#773#0" expanded="true" />
+                <element signature="e#654#655#0" expanded="true" />
+                <element signature="e#715#716#0" expanded="true" />
+                <element signature="e#746#747#0" expanded="true" />
+                <element signature="e#775#776#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Board.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Mark.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Mark.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Board.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Board.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+            <state relative-caret-position="192">
+              <caret line="33" column="33" lean-forward="false" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#601#602#0" expanded="true" />
-                <element signature="e#662#663#0" expanded="true" />
-                <element signature="e#711#712#0" expanded="true" />
-                <element signature="e#767#768#0" expanded="true" />
-                <element signature="e#1131#1132#0" expanded="true" />
-                <element signature="e#1231#1232#0" expanded="true" />
-                <element signature="e#1287#1288#0" expanded="true" />
-                <element signature="e#1343#1344#0" expanded="true" />
-                <element signature="e#1405#1406#0" expanded="true" />
-                <element signature="e#1472#1473#0" expanded="true" />
+                <element signature="e#725#726#0" expanded="true" />
+                <element signature="e#786#787#0" expanded="true" />
+                <element signature="e#838#839#0" expanded="true" />
+                <element signature="e#899#900#0" expanded="true" />
+                <element signature="e#930#931#0" expanded="true" />
+                <element signature="e#1015#1016#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BoardShould.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Column.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Column.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+              <folding>
+                <element signature="e#123#124#0" expanded="true" />
+                <element signature="e#157#158#0" expanded="true" />
+                <element signature="e#214#215#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Row.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Row.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding>
+                <element signature="e#115#116#0" expanded="true" />
+                <element signature="e#149#150#0" expanded="true" />
+                <element signature="e#178#179#0" expanded="true" />
+                <element signature="e#206#207#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BoardShould.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/BoardShould.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1156">
-              <caret line="85" column="5" lean-forward="false" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
+            <state relative-caret-position="333">
+              <caret line="74" column="42" lean-forward="false" selection-start-line="74" selection-start-column="42" selection-end-line="74" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -81,10 +128,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -103,9 +153,12 @@
         <option value="$PROJECT_DIR$/src/main/java/PlayerMark.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/BoardShoukd.java" />
-        <option value="$PROJECT_DIR$/src/test/java/TictactoeShould.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Tictactoe.java" />
+        <option value="$PROJECT_DIR$/src/main/java/BoardRow.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Column.java" />
         <option value="$PROJECT_DIR$/src/main/java/Board.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Row.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Tictactoe.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TictactoeShould.java" />
         <option value="$PROJECT_DIR$/src/test/java/BoardShould.java" />
       </list>
     </option>
@@ -148,6 +201,7 @@
     <option name="width" value="717" />
     <option name="height" value="900" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -451,55 +505,55 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_4_tictactoe - 2018.03.27 at 15h 25m 18s.xml">
-      <configuration name="All in 4.tictactoe" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_4_tictactoe - 2018.03.27 at 15h 31m 50s.xml">
-      <configuration name="All in 4.tictactoe" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_4_tictactoe - 2018.03.27 at 15h 32m 41s.xml">
-      <configuration name="All in 4.tictactoe" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_4_tictactoe - 2018.03.27 at 15h 33m 13s.xml">
-      <configuration name="All in 4.tictactoe" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_4_tictactoe - 2018.03.27 at 15h 53m 21s.xml">
       <configuration name="All in 4.tictactoe" configurationId="JUnit" />
     </history-entry>
     <history-entry file="All_in_4_tictactoe - 2018.03.27 at 15h 54m 27s.xml">
       <configuration name="All in 4.tictactoe" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TictactoeShould_end_if_all_cells_are_full - 2018.03.27 at 15h 14m 54s.xml">
-      <configuration name="TictactoeShould.end_if_all_cells_are_full" configurationId="JUnit" />
+    <history-entry file="All_in_4_tictactoe - 2018.03.27 at 17h 17m 56s.xml">
+      <configuration name="All in 4.tictactoe" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TictactoeShould_end_if_all_cells_are_full - 2018.03.27 at 15h 16m 26s.xml">
-      <configuration name="TictactoeShould.end_if_all_cells_are_full" configurationId="JUnit" />
+    <history-entry file="All_in_4_tictactoe - 2018.03.27 at 17h 18m 37s.xml">
+      <configuration name="All in 4.tictactoe" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TictactoeShould_end_if_all_cells_are_full - 2018.03.27 at 15h 24m 32s.xml">
-      <configuration name="TictactoeShould.end_if_all_cells_are_full" configurationId="JUnit" />
+    <history-entry file="All_in_4_tictactoe - 2018.03.27 at 17h 19m 19s.xml">
+      <configuration name="All in 4.tictactoe" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TictactoeShould_end_if_all_cells_are_full - 2018.03.27 at 15h 25m 01s.xml">
-      <configuration name="TictactoeShould.end_if_all_cells_are_full" configurationId="JUnit" />
+    <history-entry file="All_in_4_tictactoe - 2018.03.27 at 17h 20m 00s.xml">
+      <configuration name="All in 4.tictactoe" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_4_tictactoe - 2018.03.27 at 17h 20m 32s.xml">
+      <configuration name="All in 4.tictactoe" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_4_tictactoe - 2018.03.27 at 18h 22m 26s.xml">
+      <configuration name="All in 4.tictactoe" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_4_tictactoe - 2018.03.27 at 18h 22m 57s.xml">
+      <configuration name="All in 4.tictactoe" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_4_tictactoe - 2018.03.27 at 18h 23m 03s.xml">
+      <configuration name="All in 4.tictactoe" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="962" y="0" width="958" height="1080" extended-state="0" />
+    <frame x="404" y="0" width="1036" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3269934" sideWeight="0.49375" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32648125" sideWeight="0.49375" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12015889" sideWeight="0.5146138" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43958333" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12015889" sideWeight="0.48538622" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33736396" sideWeight="0.48538622" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26304802" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24324325" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -586,13 +640,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/BoardShould.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="85" column="5" lean-forward="false" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="510">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -604,55 +656,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Column.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TictactoeShould.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="150">
+          <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+          <folding>
+            <element signature="e#123#124#0" expanded="true" />
+            <element signature="e#157#158#0" expanded="true" />
+            <element signature="e#214#215#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Tictactoe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="65" lean-forward="false" selection-start-line="36" selection-start-column="65" selection-end-line="36" selection-end-column="65" />
+        <state relative-caret-position="342">
+          <caret line="36" column="35" lean-forward="false" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
           <folding>
             <element signature="e#157#158#0" expanded="true" />
             <element signature="e#191#192#0" expanded="true" />
             <element signature="e#230#231#0" expanded="true" />
             <element signature="e#266#267#0" expanded="true" />
-            <element signature="e#651#652#0" expanded="true" />
-            <element signature="e#712#713#0" expanded="true" />
-            <element signature="e#743#744#0" expanded="true" />
-            <element signature="e#772#773#0" expanded="true" />
+            <element signature="e#654#655#0" expanded="true" />
+            <element signature="e#715#716#0" expanded="true" />
+            <element signature="e#746#747#0" expanded="true" />
+            <element signature="e#775#776#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Row.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#115#116#0" expanded="true" />
+            <element signature="e#149#150#0" expanded="true" />
+            <element signature="e#178#179#0" expanded="true" />
+            <element signature="e#206#207#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Board.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        <state relative-caret-position="192">
+          <caret line="33" column="33" lean-forward="false" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#601#602#0" expanded="true" />
-            <element signature="e#662#663#0" expanded="true" />
-            <element signature="e#711#712#0" expanded="true" />
-            <element signature="e#767#768#0" expanded="true" />
-            <element signature="e#1131#1132#0" expanded="true" />
-            <element signature="e#1231#1232#0" expanded="true" />
-            <element signature="e#1287#1288#0" expanded="true" />
-            <element signature="e#1343#1344#0" expanded="true" />
-            <element signature="e#1405#1406#0" expanded="true" />
-            <element signature="e#1472#1473#0" expanded="true" />
+            <element signature="e#725#726#0" expanded="true" />
+            <element signature="e#786#787#0" expanded="true" />
+            <element signature="e#838#839#0" expanded="true" />
+            <element signature="e#899#900#0" expanded="true" />
+            <element signature="e#930#931#0" expanded="true" />
+            <element signature="e#1015#1016#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TictactoeShould.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="48" lean-forward="true" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/BoardShould.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="74" column="42" lean-forward="false" selection-start-line="74" selection-start-column="42" selection-end-line="74" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

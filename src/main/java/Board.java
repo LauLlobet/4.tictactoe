@@ -7,42 +7,60 @@ public class Board {
             Mark.empty, Mark.empty, Mark.empty,
             Mark.empty, Mark.empty, Mark.empty));
 
-    public void placeMarkOrThrow(Mark playerMark, int row, int column) throws Exception {
 
+    public void placeMarkOrThrow(Mark playerMark, Row row, Column column) throws Exception {
         if (getMark(row, column) != playerMark.empty) {
             throw new Exception("trying to play on a full cell");
         }
         setMark(playerMark, row, column);
     }
 
-    private void setMark(Mark playerMark, int row, int column) {
-        boardVector.set(row * 3 + column, playerMark);
+    private void setMark(Mark playerMark, Row row, Column column) {
+        boardVector.set(getIndex(row, column), playerMark);
     }
 
-    private Mark getMark(int row, int column) {
-        return boardVector.get(row * 3 + column);
+    private int getIndex(Row row, Column column) {
+        return row.getIndex() * 3 + column.getIndex();
     }
 
-    boolean hasSameMarkInRange(Mark mark, int initX, int endX, int intitY, int endY) {
-        for (int x = initX; x <= endX; x++) {
-            for (int y = intitY; y <= endY; y++) {
-                if (getMark(x, y) != mark) {
-                    return false;
-                }
-            }
-        }
-        return true;
+    private Mark getMark(Row row, Column column) {
+        return boardVector.get(getIndex(row, column));
     }
 
     public boolean isFull() {
-        return boardVector.stream().map(x -> x != Mark.empty).reduce(true, (x, y) -> x && y);
+        return boardVector.stream().filter(x -> x != Mark.empty).count() == 9;
     }
 
-    public boolean hasSameMarkInRow(Mark x, int row) {
-        return hasSameMarkInRange(x,row,row,0,2);
+    public boolean hasThreeInARow(Mark x) {
+        if(     getMark(Row.UP, Column.LEFT) == x &&
+                getMark(Row.MIDDLE, Column.LEFT) == x &&
+                getMark(Row.DOWN, Column.LEFT) == x)
+            return true;
+        if(     getMark(Row.UP, Column.MIDDLE) == x &&
+                getMark(Row.MIDDLE, Column.MIDDLE) == x &&
+                getMark(Row.DOWN, Column.MIDDLE) == x)
+            return true;
+        if(     getMark(Row.UP, Column.RIGHT) == x &&
+                getMark(Row.MIDDLE, Column.RIGHT) == x &&
+                getMark(Row.DOWN, Column.RIGHT) == x)
+            return true;
+        if(     getMark(Row.UP, Column.LEFT) == x &&
+                getMark(Row.UP, Column.MIDDLE) == x &&
+                getMark(Row.UP, Column.RIGHT) == x)
+            return true;
+        if(     getMark(Row.MIDDLE, Column.LEFT) == x &&
+                getMark(Row.MIDDLE, Column.MIDDLE) == x &&
+                getMark(Row.MIDDLE, Column.RIGHT) == x)
+            return true;
+        if(     getMark(Row.DOWN, Column.LEFT) == x &&
+                getMark(Row.DOWN, Column.MIDDLE) == x &&
+                getMark(Row.DOWN, Column.RIGHT) == x)
+            return true;
+        if(     getMark(Row.UP, Column.LEFT) == x &&
+                getMark(Row.MIDDLE, Column.MIDDLE) == x &&
+                getMark(Row.DOWN, Column.RIGHT) == x)
+            return true;
+        return false;
     }
 
-    public boolean hasSameMarkInColumn(Mark x, int column) {
-        return  hasSameMarkInRange(x, 0, 2, column, column);
-    }
 }

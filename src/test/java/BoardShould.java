@@ -12,76 +12,68 @@ public class BoardShould {
     @Test(expected = Exception.class)
     public void prevent_from_playing_at_already_played_position() throws Exception {
         Board board = new Board();
-        board.placeMarkOrThrow(Mark.X, 0, 0);
-        board.placeMarkOrThrow(Mark.X, 0, 0);
+        board.placeMarkOrThrow(Mark.X, Row.UP, Column.LEFT);
+        board.placeMarkOrThrow(Mark.X, Row.UP, Column.LEFT);
     }
 
     @Test
     public void be_not_full_if_still_has_empty_cells() throws Exception {
         Board board = new Board();
-        board.placeMarkOrThrow(Mark.X, 0, 0);
+        board.placeMarkOrThrow(Mark.X, Row.UP, Column.LEFT);
         assertFalse(board.isFull());
-        board.placeMarkOrThrow(Mark.X, 2, 0);
+        board.placeMarkOrThrow(Mark.X, Row.DOWN, Column.LEFT);
         assertFalse(board.isFull());
-        board.placeMarkOrThrow(Mark.X, 0, 1);
+        board.placeMarkOrThrow(Mark.X, Row.UP, Column.MIDDLE);
         assertFalse(board.isFull());
-        board.placeMarkOrThrow(Mark.X, 2, 1);
+        board.placeMarkOrThrow(Mark.X, Row.DOWN, Column.MIDDLE);
         assertFalse(board.isFull());
     }
 
     @Test
     public void tell_if_its_full() throws Exception {
         Board board = new Board();
-        board.placeMarkOrThrow(Mark.X, 0, 0);
-        board.placeMarkOrThrow(Mark.X, 0, 1);
+        board.placeMarkOrThrow(Mark.X, Row.UP, Column.LEFT);
+        board.placeMarkOrThrow(Mark.X, Row.UP, Column.MIDDLE);
 
-        board.placeMarkOrThrow(Mark.X, 0, 2);
-        board.placeMarkOrThrow(Mark.X, 1, 0);
+        board.placeMarkOrThrow(Mark.X, Row.UP, Column.RIGHT);
+        board.placeMarkOrThrow(Mark.X, Row.MIDDLE, Column.LEFT);
 
-        board.placeMarkOrThrow(Mark.X, 1, 1);
-        board.placeMarkOrThrow(Mark.X, 1, 2);
+        board.placeMarkOrThrow(Mark.X, Row.MIDDLE, Column.MIDDLE);
+        board.placeMarkOrThrow(Mark.X, Row.MIDDLE, Column.RIGHT);
 
-        board.placeMarkOrThrow(Mark.X, 2, 0);
-        board.placeMarkOrThrow(Mark.X, 2, 1);
+        board.placeMarkOrThrow(Mark.X, Row.DOWN, Column.LEFT);
+        board.placeMarkOrThrow(Mark.X, Row.DOWN, Column.MIDDLE);
 
         assertFalse(board.isFull());
 
-        board.placeMarkOrThrow(Mark.X, 2, 2);
+        board.placeMarkOrThrow(Mark.X, Row.DOWN, Column.RIGHT);
         assertTrue(board.isFull());
     }
 
     @Test
-    @Parameters({"0",
-            "1",
-            "2"
-    })
-    public void detect_a_row_of_same_mark(int row_winner) throws Exception {
+    public void detect_a_row_of_same_mark() throws Exception {
         Board board = new Board();
-        board.placeMarkOrThrow(Mark.X, row_winner, 0);
-        board.placeMarkOrThrow(Mark.X, row_winner, 1);
+        board.placeMarkOrThrow(Mark.X, Row.UP,Column.MIDDLE);
+        board.placeMarkOrThrow(Mark.X, Row.UP, Column.RIGHT);
 
-        assertFalse(board.hasSameMarkInRow(Mark.X, row_winner));
+        assertFalse(board.hasThreeInARow(Mark.X));
 
-        board.placeMarkOrThrow(Mark.X, row_winner, 2);
+        board.placeMarkOrThrow(Mark.X, Row.UP, Column.LEFT);
 
-        assertTrue(board.hasSameMarkInRow(Mark.X, row_winner));
+        assertTrue(board.hasThreeInARow(Mark.X));
     }
 
 
     @Test
-    @Parameters({"0",
-            "1",
-            "2"
-    })
-    public void detect_a_colum_of_same_mark(int column_winner) throws Exception {
+    public void detect_a_colum_of_same_mark() throws Exception {
         Board board = new Board();
-        board.placeMarkOrThrow(Mark.X, 0, column_winner);
-        board.placeMarkOrThrow(Mark.X, 1, column_winner);
+        board.placeMarkOrThrow(Mark.X, Row.DOWN, Column.LEFT);
+        board.placeMarkOrThrow(Mark.X, Row.MIDDLE, Column.LEFT);
 
-        assertFalse(board.hasSameMarkInColumn(Mark.X,column_winner));
+        assertFalse(board.hasThreeInARow(Mark.X));
 
-        board.placeMarkOrThrow(Mark.X, 2, column_winner);
+        board.placeMarkOrThrow(Mark.X, Row.UP, Column.LEFT);
 
-        assertTrue(board.hasSameMarkInColumn(Mark.X,column_winner));
+        assertTrue(board.hasThreeInARow(Mark.X));
     }
 }
